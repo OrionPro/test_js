@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Калькулятор</title>
+    <meta name="description" content="calculator" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="libs/animate/animate.min.css">
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="media.css" />
+</head>
+
+<body>
+    <!-- Основной контент, куда будут помещаться картинки -->
+    <div class="container random_img">
+        <div class="row">
+            <!-- Холст -->
+            <canvas id="c">
+                <div class="block_image_show_1">
+                </div>
+                <div class="block_image_show_2">
+                </div>
+                <div class="block_image_show_3">
+                </div>
+                <div class="block_image_show_4">
+                </div>
+                <div class="block_image_show_5">
+                </div>
+                <div class="block_image_show_6">
+                </div>
+                <div class="block_image_show_7">
+                </div>
+                <div class="block_image_show_8">
+                </div>
+                <div class="block_image_show_9">
+                </div>
+            </canvas>
+            <p>
+                <!-- основная кнопка -->
+                <button type="button" class="btn btn-default">СТАРТ</button>
+            </p>
+        </div>
+    </div>
+    <!-- Скрытый блок, где хранятся картинки -->
+    <div class="block_img hide">
+        <img class="my-image" src="images/r0.gif" height="100" width="100">
+        <img class="my-image ten" src="images/r1.gif" height="100" width="100">
+        <img class="my-image" src="images/r10.gif" height="100" width="100">
+        <img class="my-image" src="images/r11.gif" height="100" width="100">
+        <img class="my-image ace" src="images/r12.gif" height="100" width="100">
+        <img class="my-image" src="images/r2.gif" height="100" width="100">
+        <img class="my-image" src="images/r3.gif" height="100" width="100">
+        <img class="my-image" src="images/r4.gif" height="100" width="100">
+        <img class="my-image" src="images/r5.gif" height="100" width="100">
+        <img class="my-image" src="images/r6.gif" height="100" width="100">
+        <img class="my-image" src="images/r7.gif" height="100" width="100">
+        <img class="my-image" src="images/r8.gif" height="100" width="100">
+        <img class="my-image" src="images/r9.gif" height="100" width="100">
+    </div>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <script src="libs/jquery/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="libs/animate/animate-css.js"></script>
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="js/fabric.js"></script>
+    <script src="js/common.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter -->
+    <!-- /Google Analytics counter -->
+</body>
+
+</html>

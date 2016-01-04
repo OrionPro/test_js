@@ -1,0 +1,10 @@
+
+    var block1 = document.querySelector('.block_image_show_one');
+    var btn = document.querySelector('.btn');
+    var classNames = block1.className;
+
+    btn.addEventListener('click', function() {
+        //elem.classList.add('list__item--active');
+        
+        block1.className = classNames + ' active';
+    }, false);
