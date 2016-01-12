@@ -1,4 +1,4 @@
-﻿window.onload = function() {
+window.onload = function() {
     // находим все картинки 
     var block_img = document.querySelectorAll('.block_img img');
 
@@ -102,30 +102,36 @@
     var btn = document.querySelector('.btn');
 
     btn.addEventListener('click', function() {
-        // window.location.reload();
+        canvas.remove(new fabric.Group([imgInstance, imgInstance2, imgInstance3, imgInstance4, imgInstance5, imgInstance6, imgInstance7, imgInstance8], {
 
-        // в цикле находит массив фотографий и запускает анимацию
+        }));
         for (var v = 0; v < imgGroup.length; v++) {
             imgGroup[v].animate('left', '+=500', {
                 onChange: canvas.renderAll.bind(canvas),
                 duration: 5000,
                 easing: fabric.util.ease.easeOutSine
             });
-            if (imgGroup[v].left > 300) {
+            if (imgGroup[v].left > 500) {
                 canvas.add(new fabric.Group([imgInstance, imgInstance2, imgInstance3, imgInstance4, imgInstance5, imgInstance6, imgInstance7, imgInstance8], {
-                    top: -110,
+                    top: 0,
                     left: 0
-
                 }));
 
-
-            } else if (imgGroup[v].left > 300) {
-
+            }
+            if (imgGroup[v].left > 1000) {
+                canvas.add(new fabric.Group([imgInstance, imgInstance2, imgInstance3, imgInstance4, imgInstance5, imgInstance6, imgInstance7, imgInstance8], {
+                    top: 0,
+                    left: 0
+                }));
             }
 
         }
-    });
 
+
+
+
+
+    });
 
 
 
